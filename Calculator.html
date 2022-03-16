@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator Online</title>  
+</head>
+<script language="JavaScript">
+    function tambah() {
+      var angka1=parseFloat(document.calculator.angka1.value);
+      var angka2=parseFloat(document.calculator.angka2.value);
+      var hasil= angka1+angka2;
+      document.calculator.hasil.value=hasil;
+    }
+    function kurang() {
+      var angka1=parseFloat(document.calculator.angka1.value);
+      var angka2=parseFloat(document.calculator.angka2.value);
+      var hasil= angka1-angka2;
+      document.calculator.hasil.value=hasil;
+    }
+    function kali() {
+      var angka1=parseFloat(document.calculator.angka1.value);
+      var angka2=parseFloat(document.calculator.angka2.value);
+      var hasil= angka1*angka2;
+      document.calculator.hasil.value=hasil;
+    }
+    function bagi() {
+      var angka1=parseFloat(document.calculator.angka1.value);
+      var angka2=parseFloat(document.calculator.angka2.value);
+      var hasil= angka1/angka2;
+      document.calculator.hasil.value=hasil;
+    }
+  </script>  
+<body>
+  <form name="calculator">
+  <p>
+    <td>Angka 1</td> <td>:</td> <td><input type="number" name="angka1" size="20"></td> </p>
+  <p>
+    <td>Angka 2</td> <td>:</td> <td><input type="number" name="angka2" size="20"></td> </p>
+  <p>
+    <td>Hasil</td> <td>:</td> <td><input type="number" name="hasil" size="20"></td> </p>  
+  <p>
+    <input class="tombol" type="button" onclick="tambah()" value=" + ">
+    <input class="tombol" type="button" onclick="kurang()" value=" - ">
+    <input class="tombol" type="button" onclick="kali()" value=" * ">
+    <input class="tombol" type="button" onclick="bagi()" value=" / ">
+  </p>
+  </form>
+</body>
+</html>
